@@ -82,7 +82,8 @@ class SiteController extends Controller
 //        $password = md5($key . $input_pass);
 //        echo "pass is $password";
 //        exit;
-        return $this->render('index');
+//        return $this->render('index');
+        return $this->render('test.tpl',['test'=>"this is a test"]);
     }
     
     public function request_post($url = '',$ispost=true, $post_data = array()) {
