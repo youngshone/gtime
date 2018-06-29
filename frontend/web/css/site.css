@@ -1,14 +1,32 @@
 html,body {
     color: #3C3C3C;
     -webkit-font-smoothing: antialiased;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .footer {
-    height: 60px;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
-    padding-top: 20px;
+    padding: 5px;
 }
+.footcontent{
+    margin: 0 auto;width: 1190px;padding: 0;
+}
+.site-content{margin: 0 auto;width: 1190px;padding: 0;min-height: 600px;}
+/*网站顶部样式begin
+*/
+.site-nav{z-index: 10000;background-color: #f5f5f5;border-bottom: 1px solid #eee;margin: 0;text-align: left;}
+.site-nav .site-nav-bd {margin: 0 auto;width: 1190px;height: 35px;background: #f5f5f5;}
+.site-nav .site-nav-bd:after {content: "";display: table;clear: both;}
+.site-nav-bd-l{float: left;padding: 0;}
+.site-nav-bd-r{float: right;}
+.site-nav-menu-hd a{float: left;margin-right: 7px;font-size: 12px;color: #6C6C6C;text-decoration: none;}
+.site-nav-menu-hd a:hover{color:orangered;}
+.site-nav-menu-hd .ul, ol, li {list-style: none;display: inline;}
+
+/*
+*网站logo
+*/
+.site-logo-and-search{margin: 0 auto;width: 1190px;height: 95px;}
+.site-logo-bd{width: 178px;height: 90px;}

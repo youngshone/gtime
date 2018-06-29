@@ -4,7 +4,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
+use \app\components\FrontController;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
@@ -16,7 +16,7 @@ use frontend\models\ContactForm;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends FrontController
 {
     /**
      * @inheritdoc
@@ -76,6 +76,7 @@ class SiteController extends Controller
 //        $cache->add('name','zhangsan');
         
         
+        
 //        $key="dfvpir*52swq";
 //        $input_pass = "tsy123";
 //        echo "input is $input_pass"."<br/>";
@@ -93,7 +94,7 @@ class SiteController extends Controller
         
         $o = "";
         foreach ( $post_data as $k => $v ) 
-        { 
+        {
             $o.= "$k=" . urlencode( $v ). "&" ;
         }
         $post_data = substr($o,0,-1);
