@@ -10,6 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'index',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -106,5 +107,6 @@ return [
         
     ],
     //系统模块配置
-    'modules' => require(__DIR__ . '/moduleconfig.php'),   'params' => $params,
+    'modules' => require(__DIR__ . '/moduleconfig.php'),
+    'params' => $params,
 ];

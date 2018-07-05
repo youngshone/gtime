@@ -2,12 +2,11 @@
 
 namespace app\modules\snatchorder\controllers;
 
-use yii\web\Controller;
 
 /**
  * Default controller for the `snatchorder` module
  */
-class DefaultController extends Controller
+class DefaultController extends \app\components\FrontController
 {
     /**
      * Renders the index view for the module

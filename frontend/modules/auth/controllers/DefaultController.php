@@ -1,12 +1,13 @@
 <?php
 
-namespace app\modules\requirements\controllers;
+namespace app\modules\auth\controllers;
 
+use yii\web\Controller;
 
 /**
- * Default controller for the `requirements` module
+ * Default controller for the `auth` module
  */
-class DefaultController extends \app\components\FrontController
+class DefaultController extends Controller
 {
     /**
      * Renders the index view for the module

@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\requirements\controllers;
+namespace app\modules\index\controllers;
 
 
 /**
- * Default controller for the `requirements` module
+ * Default controller for the `index` module
  */
 class DefaultController extends \app\components\FrontController
 {
@@ -14,6 +14,7 @@ class DefaultController extends \app\components\FrontController
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        
+        return $this->render('index.tpl');
     }
 }

@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html lang="{Yii::$app->language}">
 <head>
-    <meta charset="{Yii::$app->charset}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {Html::csrfMetaTags()}
     <title>{Html::encode($this->title)}</title>
@@ -23,7 +22,7 @@
                         
                         {if Yii::$app->user->isGuest}
                         <a href="#">欢迎来到淘手游</a>
-                        <a href="/login">登录</a><a href="/signup">注册</a>
+                        <a href="/auth/user/login">登录</a><a href="/signup">注册</a>
                         {else}
                         <a href="#">欢迎来到淘手游,{Yii::$app->user->identity->username}</a>
                             <a href="/logout">退出</a>
