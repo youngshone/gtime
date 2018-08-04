@@ -45,6 +45,19 @@ return [
             ],
         ],
         */
+        'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false, //false为隐藏 index.php
+            //规则
+            'rules' => [
+                'login'=>'/site/login',
+                'logout'=>'/site/logout',
+                
+            ]
+        ],
     ],
+    //系统模块配置
+    'modules' => require(__DIR__ . '/moduleconfig.php'),
     'params' => $params,
 ];
